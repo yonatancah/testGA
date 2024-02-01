@@ -20,6 +20,7 @@ jobs:
     - name: Test with pytest
       run: |
         conda install pytest
+        conda install conda-forge::pytest-cov
         pytest
         coverage run -m pytest test_greet.py
         coverage report
