@@ -21,3 +21,5 @@ jobs:
       run: |
         conda install pytest
         pytest
+        coverage run -m pytest test_greet.py
+        coverage report
