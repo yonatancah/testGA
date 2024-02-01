@@ -1,7 +1,6 @@
 name: Check All Tests
 
-on:
-  check_run:
+on: [push]
 
 jobs:
   build-linux:
